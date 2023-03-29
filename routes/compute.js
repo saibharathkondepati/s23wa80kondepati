@@ -11,18 +11,18 @@ router.get('/', function(req, res, next) {
     x=Math.floor(Math.random()*20)
     y=Math.floor(Math.cosh()*10)
     let ab = Math.acosh(x);
-    let abc = Math.log1(x);
+    let abc = Math.log1p(x);
     let abcd = Math.tan(x);
     let abcdef = Math.sqrt(x);
-    res.send('Math.acosh() applied for'+x +'is' +ab+'\n Math.log1() applied for'+x +'is'+abc+'\n Math.tan() applied for'+x +'is'+abcd+'\n Math.sqrt() applied for'+x +'is'+abcdef)
+    res.send('Math.acosh() applied for'+x +'is' +ab+'\n Math.log1p() applied for'+x +'is'+abc+'\n Math.tan() applied for'+x +'is'+abcd+'\n Math.sqrt() applied for'+x +'is'+abcdef)
 }
 else{
     x=req.query.x;
     let ab = Math.acosh(x);
-    let abc = Math.log1(x);
+    let abc = Math.log1p(x);
     let abcd = Math.tan(x);
     let abcdef = Math.sqrt(x);
-    res.send('Math.acosh() applied for'+x +'is' +ab+'\n Math.log1() applied for'+x +'is'+abc+'\n Math.tan() applied for'+x +'is'+abcd+'\n Math.sqrt() applied for'+x +'is'+abcdef)
+    res.send('Math.acosh() applied for'+x +'is' +ab+'\n Math.log1p() applied for'+x +'is'+abc+'\n Math.tan() applied for'+x +'is'+abcd+'\n Math.sqrt() applied for'+x +'is'+abcdef)
 }
 });
 
