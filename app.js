@@ -21,9 +21,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', mydataRouter);
+app.use('/mydata', mydataRouter);
 app.use('/', index);
-app.use('/', computeroter);
+app.use('/compute', computeroter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
